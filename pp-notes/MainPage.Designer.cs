@@ -32,6 +32,7 @@
             MainSearch = new TextBox();
             MainAdd = new Button();
             MainFlowLayout = new FlowLayoutPanel();
+            MainExit = new Label();
             SuspendLayout();
             // 
             // MainUsername
@@ -56,6 +57,7 @@
             MainSearch.PlaceholderText = "Поиск";
             MainSearch.Size = new Size(212, 29);
             MainSearch.TabIndex = 1;
+            MainSearch.TextChanged += MainSearch_TextChanged;
             // 
             // MainAdd
             // 
@@ -70,6 +72,7 @@
             MainAdd.TabIndex = 2;
             MainAdd.Text = "+ Запись";
             MainAdd.UseVisualStyleBackColor = false;
+            MainAdd.Click += MainAdd_Click;
             // 
             // MainFlowLayout
             // 
@@ -80,11 +83,24 @@
             MainFlowLayout.Size = new Size(896, 578);
             MainFlowLayout.TabIndex = 3;
             // 
+            // MainExit
+            // 
+            MainExit.AutoSize = true;
+            MainExit.Font = new Font("Book Antiqua", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            MainExit.ForeColor = Color.Gray;
+            MainExit.Location = new Point(235, 43);
+            MainExit.Name = "MainExit";
+            MainExit.Size = new Size(67, 23);
+            MainExit.TabIndex = 4;
+            MainExit.Text = "Выход";
+            MainExit.Click += MainExit_Click;
+            // 
             // MainPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(34, 35, 55);
+            Controls.Add(MainExit);
             Controls.Add(MainFlowLayout);
             Controls.Add(MainAdd);
             Controls.Add(MainSearch);
@@ -103,5 +119,6 @@
         private TextBox MainSearch;
         private Button MainAdd;
         private FlowLayoutPanel MainFlowLayout;
+        private Label MainExit;
     }
 }

@@ -17,5 +17,8 @@
     <Compile Update="NoteDetail.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="NoteEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

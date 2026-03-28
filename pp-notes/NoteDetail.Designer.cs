@@ -31,6 +31,7 @@
             NDTitle = new Label();
             NDText = new Label();
             NDBack = new Label();
+            NDEdit = new Label();
             SuspendLayout();
             // 
             // NDTitle
@@ -67,11 +68,24 @@
             NDBack.Text = "Назад";
             NDBack.Click += NDBack_Click;
             // 
+            // NDEdit
+            // 
+            NDEdit.AutoSize = true;
+            NDEdit.Font = new Font("Book Antiqua", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            NDEdit.ForeColor = Color.Gray;
+            NDEdit.Location = new Point(781, 56);
+            NDEdit.Name = "NDEdit";
+            NDEdit.Size = new Size(109, 26);
+            NDEdit.TabIndex = 3;
+            NDEdit.Text = "Изменить";
+            NDEdit.Click += NDEdit_Click;
+            // 
             // NoteDetail
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(34, 35, 55);
+            Controls.Add(NDEdit);
             Controls.Add(NDBack);
             Controls.Add(NDText);
             Controls.Add(NDTitle);
@@ -87,5 +101,6 @@
         private Label NDTitle;
         private Label NDText;
         private Label NDBack;
+        private Label NDEdit;
     }
 }

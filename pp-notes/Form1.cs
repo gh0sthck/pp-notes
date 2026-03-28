@@ -27,6 +27,14 @@ namespace pp_notes
             {
                 ShowNoteScreen(note, loggedUser);
             };
+            mp.OnExit += () =>
+            {
+                ShowLoginScreen();
+            };
+            mp.OnNoteAdd += () =>
+            {
+                ShowEditNoteScreen(null, loggedUser);
+            };
 
             ShowScreen(mp);
         }
@@ -39,7 +47,31 @@ namespace pp_notes
             {
                 ShowMainScreen(loggedUser);
             };
+            np.OnEdit += () =>
+            {
+                ShowEditNoteScreen(note, loggedUser);
+            };
             ShowScreen(np);
+        }
+
+        private void ShowEditNoteScreen(Note? note, User loggedUser)
+        {
+            NoteEdit nd = new NoteEdit();
+            nd.note = note;
+            nd.OnConfirm += editedNote =>
+            {
+                ShowNoteScreen(editedNote, loggedUser);
+            };
+            nd.OnCreateBack += () =>
+            {
+                ShowMainScreen(loggedUser);
+            };
+            nd.OnBack += () =>
+            {
+                ShowNoteScreen(note, loggedUser);
+            };
+            
+            ShowScreen(nd);
         }
 
         private void ShowLoginScreen()

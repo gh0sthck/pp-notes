@@ -11,7 +11,8 @@ namespace pp_notes
     public partial class NoteDetail : UserControl
     {
         public Note note;
-        public event Action OnBack;
+        public event Action? OnBack;
+        public event Action? OnEdit;
 
         public NoteDetail()
         {
@@ -27,6 +28,11 @@ namespace pp_notes
         private void NDBack_Click(object sender, EventArgs e)
         {
             OnBack?.Invoke();
+        }
+
+        private void NDEdit_Click(object sender, EventArgs e)
+        {
+            OnEdit?.Invoke();
         }
     }
 }

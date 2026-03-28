@@ -13,19 +13,23 @@ namespace pp_notes
 
         public User LoggedUser;
         private List<Note> notes = new List<Note>();
+
         public event Action<Note>? OnNoteClick;
+        public event Action? OnExit;
+        public event Action? OnNoteAdd;
 
         public MainPage()
         {
             InitializeComponent();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 20; i++)
             {
                 notes.Add(new Note(i, $"testtitle-{i}", "so description...", LoggedUser));
             }
         }
 
-        private void InsertData()
+        private void InsertData(List<Note> notes)
         {
+            MainFlowLayout.Controls.Clear();
             foreach (Note note in notes)
             {
                 var nc = new NoteCard();
@@ -41,7 +45,31 @@ namespace pp_notes
         private void MainPage_Load(object sender, EventArgs e)
         {
             MainUsername.Text = LoggedUser.Username;
-            InsertData();
+            InsertData(notes);
+        }
+
+        private void MainSearch_TextChanged(object sender, EventArgs e)
+        {
+            string temp = MainSearch.Text;
+            List<Note> notes2 = new List<Note>();
+            foreach (Note note in notes)
+            {
+                if (note.Title.Contains(temp))
+                {
+                    notes2.Add(note);
+                }
+            }
+            InsertData(notes2);
+        }
+
+        private void MainExit_Click(object sender, EventArgs e)
+        {
+            OnExit?.Invoke();
+        }
+
+        private void MainAdd_Click(object sender, EventArgs e)
+        {
+            OnNoteAdd?.Invoke();
         }
     }
 }
