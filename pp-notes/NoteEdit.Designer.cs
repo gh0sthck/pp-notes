@@ -33,6 +33,7 @@
             NEConfirm = new Label();
             NEBack = new Label();
             NEDelete = new Label();
+            NEImagePath = new TextBox();
             SuspendLayout();
             // 
             // NETitle
@@ -41,8 +42,9 @@
             NETitle.BorderStyle = BorderStyle.None;
             NETitle.Font = new Font("Book Antiqua", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             NETitle.ForeColor = Color.White;
-            NETitle.Location = new Point(108, 119);
+            NETitle.Location = new Point(108, 97);
             NETitle.Name = "NETitle";
+            NETitle.PlaceholderText = "Название";
             NETitle.Size = new Size(329, 26);
             NETitle.TabIndex = 0;
             // 
@@ -50,12 +52,13 @@
             // 
             NEText.BackColor = Color.FromArgb(77, 75, 101);
             NEText.BorderStyle = BorderStyle.None;
-            NEText.Font = new Font("Book Antiqua", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            NEText.Font = new Font("Book Antiqua", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
             NEText.ForeColor = Color.White;
             NEText.Location = new Point(108, 193);
             NEText.Multiline = true;
             NEText.Name = "NEText";
-            NEText.Size = new Size(699, 435);
+            NEText.PlaceholderText = "Текст...";
+            NEText.Size = new Size(850, 509);
             NEText.TabIndex = 1;
             // 
             // NEConfirm
@@ -94,18 +97,31 @@
             NEDelete.Text = "Удалить";
             NEDelete.Click += NEDelete_Click;
             // 
+            // NEImagePath
+            // 
+            NEImagePath.BackColor = Color.FromArgb(77, 75, 101);
+            NEImagePath.BorderStyle = BorderStyle.None;
+            NEImagePath.Font = new Font("Book Antiqua", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            NEImagePath.ForeColor = Color.White;
+            NEImagePath.Location = new Point(108, 143);
+            NEImagePath.Name = "NEImagePath";
+            NEImagePath.PlaceholderText = "Путь до картинки";
+            NEImagePath.Size = new Size(329, 26);
+            NEImagePath.TabIndex = 6;
+            // 
             // NoteEdit
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(34, 35, 55);
+            Controls.Add(NEImagePath);
             Controls.Add(NEDelete);
             Controls.Add(NEBack);
             Controls.Add(NEConfirm);
             Controls.Add(NEText);
             Controls.Add(NETitle);
             Name = "NoteEdit";
-            Size = new Size(986, 700);
+            Size = new Size(1055, 747);
             Load += NoteEdit_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -118,5 +134,6 @@
         private Label NEConfirm;
         private Label NEBack;
         private Label NEDelete;
+        private TextBox NEImagePath;
     }
 }

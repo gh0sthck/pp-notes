@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Frozen;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,6 +32,7 @@ namespace pp_notes
             {
                 NETitle.Text = note.Title;
                 NEText.Text = note.Text;
+                NEImagePath.Text = note.Image;
             }
             else
             {
@@ -44,6 +46,11 @@ namespace pp_notes
             if (note != null)
             {
                 Note? CreatedNote = new Note(note.Id, NETitle.Text.ToString(), NEText.Text.ToString(), loggedUser);
+                if (NEImagePath.Text.ToString() != "")
+                {
+                    CreatedNote.Image = NEImagePath.Text;
+                }
+                
                 CreatedNote = db.EditNote(note.Id, CreatedNote);
                 if (CreatedNote != null)
                 {
@@ -58,6 +65,10 @@ namespace pp_notes
             else
             {
                 Note? CreatedNote = new Note(-1, NETitle.Text.ToString(), NEText.Text.ToString(), loggedUser);
+                if (NEImagePath.Text.ToString() != "")
+                {
+                    CreatedNote.Image = NEImagePath.Text;
+                }
                 CreatedNote = db.AddNote(CreatedNote);
                 if (CreatedNote != null)
                 {

@@ -36,14 +36,14 @@
             BasePanel.Dock = DockStyle.Fill;
             BasePanel.Location = new Point(0, 0);
             BasePanel.Name = "BasePanel";
-            BasePanel.Size = new Size(970, 661);
+            BasePanel.Size = new Size(1055, 747);
             BasePanel.TabIndex = 0;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(970, 661);
+            ClientSize = new Size(1055, 747);
             Controls.Add(BasePanel);
             Font = new Font("Book Antiqua", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
             FormBorderStyle = FormBorderStyle.FixedDialog;

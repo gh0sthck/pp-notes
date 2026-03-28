@@ -23,6 +23,14 @@ namespace pp_notes
         {
             NDTitle.Text = note.Title;
             NDText.Text = note.Text;
+            if (note.Image != null && File.Exists(note.Image))
+            {
+                NDImage.Image = Image.FromFile(note.Image.ToString());
+            } else
+            {
+                NDText.Location = new Point(103, 161);
+                NDImage.Visible = false;
+            }
         }
 
         private void NDBack_Click(object sender, EventArgs e)

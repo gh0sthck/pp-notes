@@ -45,6 +45,7 @@ namespace pp_notes
         {
             MainUsername.Text = LoggedUser.Username;
             notes = db.GetNotesByUserId(LoggedUser.Id);
+            pictureBox1.Image = Image.FromFile("avatar.jpg");
             InsertData(notes);
         }
 

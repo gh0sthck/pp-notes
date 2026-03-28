@@ -33,13 +33,15 @@
             MainAdd = new Button();
             MainFlowLayout = new FlowLayoutPanel();
             MainExit = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // MainUsername
             // 
             MainUsername.AutoSize = true;
             MainUsername.Font = new Font("Book Antiqua", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            MainUsername.Location = new Point(119, 40);
+            MainUsername.Location = new Point(129, 40);
             MainUsername.Name = "MainUsername";
             MainUsername.Size = new Size(110, 26);
             MainUsername.TabIndex = 0;
@@ -51,7 +53,7 @@
             MainSearch.BorderStyle = BorderStyle.None;
             MainSearch.Font = new Font("Book Antiqua", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             MainSearch.ForeColor = Color.FromArgb(149, 149, 159);
-            MainSearch.Location = new Point(719, 37);
+            MainSearch.Location = new Point(774, 43);
             MainSearch.Multiline = true;
             MainSearch.Name = "MainSearch";
             MainSearch.PlaceholderText = "Поиск";
@@ -66,7 +68,7 @@
             MainAdd.FlatStyle = FlatStyle.Flat;
             MainAdd.Font = new Font("Book Antiqua", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             MainAdd.ForeColor = Color.FromArgb(149, 149, 159);
-            MainAdd.Location = new Point(521, 37);
+            MainAdd.Location = new Point(545, 43);
             MainAdd.Name = "MainAdd";
             MainAdd.Size = new Size(168, 29);
             MainAdd.TabIndex = 2;
@@ -78,9 +80,9 @@
             // 
             MainFlowLayout.AutoScroll = true;
             MainFlowLayout.Location = new Point(50, 102);
-            MainFlowLayout.Margin = new Padding(5);
             MainFlowLayout.Name = "MainFlowLayout";
-            MainFlowLayout.Size = new Size(896, 578);
+            MainFlowLayout.Padding = new Padding(9);
+            MainFlowLayout.Size = new Size(936, 578);
             MainFlowLayout.TabIndex = 3;
             // 
             // MainExit
@@ -88,18 +90,28 @@
             MainExit.AutoSize = true;
             MainExit.Font = new Font("Book Antiqua", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             MainExit.ForeColor = Color.Gray;
-            MainExit.Location = new Point(235, 43);
+            MainExit.Location = new Point(261, 46);
             MainExit.Name = "MainExit";
             MainExit.Size = new Size(67, 23);
             MainExit.TabIndex = 4;
             MainExit.Text = "Выход";
             MainExit.Click += MainExit_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(50, 24);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(63, 58);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            // 
             // MainPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(34, 35, 55);
+            Controls.Add(pictureBox1);
             Controls.Add(MainExit);
             Controls.Add(MainFlowLayout);
             Controls.Add(MainAdd);
@@ -107,8 +119,9 @@
             Controls.Add(MainUsername);
             ForeColor = SystemColors.Control;
             Name = "MainPage";
-            Size = new Size(986, 700);
+            Size = new Size(1055, 747);
             Load += MainPage_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -120,5 +133,6 @@
         private Button MainAdd;
         private FlowLayoutPanel MainFlowLayout;
         private Label MainExit;
+        private PictureBox pictureBox1;
     }
 }

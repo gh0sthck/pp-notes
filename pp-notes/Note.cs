@@ -11,6 +11,7 @@ namespace pp_notes
         string title;
         string text;
         User author;
+        string? image = null;
 
         public string Title
         {
@@ -34,13 +35,20 @@ namespace pp_notes
             get { return this.author; }
         }
 
+        public string? Image
+        {
+            get { return this.image; }
+            set { this.image = value; }
+        }
 
-        public Note(int id, string title, string text, User author)
+
+        public Note(int id, string title, string text, User author, string? image = null)
         {
             this.id = id;
             this.title = title;
             this.text = text;
             this.author = author;
+            this.image = image;
         }
 
     }

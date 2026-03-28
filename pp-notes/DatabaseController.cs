@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Text;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace pp_notes
 {
@@ -53,7 +54,7 @@ namespace pp_notes
                 connection.Open();
                 var command = new SQLiteCommand();
                 command.Connection = connection;
-                command.CommandText = "SELECT notes.id, title, text, users.id as UID, users.username as UN, users.password as UP FROM notes INNER JOIN users ON notes.author_id = users.id WHERE notes.author_id = @aid";
+                command.CommandText = "SELECT notes.id, title, text, image, users.id as UID, users.username as UN, users.password as UP FROM notes INNER JOIN users ON notes.author_id = users.id WHERE notes.author_id = @aid";
                 using (command)
                 {
                     command.Parameters.AddWithValue("aid", userId.ToString());
@@ -66,8 +67,13 @@ namespace pp_notes
                                 id: int.Parse(reader["id"].ToString()),
                                 title: reader["title"].ToString(),
                                 text: reader["text"].ToString(),
-                                author: user
+                                author: user,
+                                image: null
                             );
+                            if (reader["image"] != DBNull.Value)
+                            {
+                                note.Image = reader["image"].ToString();
+                            }
                             notes.Add(note);
                         }
                         return notes;
@@ -83,13 +89,19 @@ namespace pp_notes
                 connection.Open();
                 var command = new SQLiteCommand();
                 command.Connection = connection;
-                command.CommandText = "INSERT INTO notes (title, text, author_id) VALUES (@title, @text, @aid);";
+                command.CommandText = "INSERT INTO notes (title, text, author_id, image) VALUES (@title, @text, @aid, @image);";
                 
                 using (command)
                 {
+                    string? image = null;
                     command.Parameters.AddWithValue("title", note.Title);
                     command.Parameters.AddWithValue("text", note.Text);
                     command.Parameters.AddWithValue("aid", note.Author.Id);
+                    if (note.Image != null)
+                    {
+                        image = note.Image;
+                    }
+                    command.Parameters.AddWithValue("image", image);
 
                     int result = command.ExecuteNonQuery();
                     if (result > 0)
@@ -110,13 +122,19 @@ namespace pp_notes
                 connection.Open();
                 var command = new SQLiteCommand();
                 command.Connection = connection;
-                command.CommandText = "UPDATE notes SET title = @title, text = @text WHERE notes.id = @nid;";
+                command.CommandText = "UPDATE notes SET title = @title, text = @text, image = @image WHERE notes.id = @nid;";
 
                 using (command)
                 {
+                    string? image = null;
                     command.Parameters.AddWithValue("title", newNote.Title);
                     command.Parameters.AddWithValue("text", newNote.Text);
                     command.Parameters.AddWithValue("nid", NoteId);
+                    if (newNote.Image != null)
+                    {
+                        image = newNote.Image;
+                    }
+                    command.Parameters.AddWithValue("image", image);
 
                     int result = command.ExecuteNonQuery();
                     if (result > 0)

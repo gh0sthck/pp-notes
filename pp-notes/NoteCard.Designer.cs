@@ -37,7 +37,7 @@
             NoteCardTitle.AutoSize = true;
             NoteCardTitle.Font = new Font("Book Antiqua", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             NoteCardTitle.ForeColor = Color.White;
-            NoteCardTitle.Location = new Point(24, 191);
+            NoteCardTitle.Location = new Point(24, 37);
             NoteCardTitle.Name = "NoteCardTitle";
             NoteCardTitle.Size = new Size(62, 23);
             NoteCardTitle.TabIndex = 0;
@@ -48,7 +48,8 @@
             NoteCardText.AutoSize = true;
             NoteCardText.Font = new Font("Book Antiqua", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
             NoteCardText.ForeColor = Color.White;
-            NoteCardText.Location = new Point(24, 228);
+            NoteCardText.Location = new Point(24, 81);
+            NoteCardText.MaximumSize = new Size(100, 100);
             NoteCardText.Name = "NoteCardText";
             NoteCardText.Size = new Size(52, 20);
             NoteCardText.TabIndex = 1;

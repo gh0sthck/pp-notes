@@ -46,7 +46,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(4, 3, 4, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(450, 700);
+            panel1.Size = new Size(447, 747);
             panel1.TabIndex = 0;
             // 
             // label1
@@ -112,7 +112,7 @@
             Controls.Add(panel1);
             Margin = new Padding(4, 3, 4, 3);
             Name = "Login";
-            Size = new Size(986, 700);
+            Size = new Size(1055, 747);
             Load += Login_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

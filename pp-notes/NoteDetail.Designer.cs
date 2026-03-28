@@ -32,6 +32,8 @@
             NDText = new Label();
             NDBack = new Label();
             NDEdit = new Label();
+            NDImage = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)NDImage).BeginInit();
             SuspendLayout();
             // 
             // NDTitle
@@ -47,12 +49,11 @@
             // 
             // NDText
             // 
-            NDText.AutoSize = true;
-            NDText.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            NDText.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
             NDText.ForeColor = Color.White;
-            NDText.Location = new Point(103, 173);
+            NDText.Location = new Point(103, 428);
             NDText.Name = "NDText";
-            NDText.Size = new Size(88, 27);
+            NDText.Size = new Size(843, 302);
             NDText.TabIndex = 1;
             NDText.Text = "NDText";
             // 
@@ -80,18 +81,29 @@
             NDEdit.Text = "Изменить";
             NDEdit.Click += NDEdit_Click;
             // 
+            // NDImage
+            // 
+            NDImage.Location = new Point(103, 161);
+            NDImage.Name = "NDImage";
+            NDImage.Size = new Size(504, 249);
+            NDImage.SizeMode = PictureBoxSizeMode.StretchImage;
+            NDImage.TabIndex = 4;
+            NDImage.TabStop = false;
+            // 
             // NoteDetail
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(34, 35, 55);
+            Controls.Add(NDImage);
             Controls.Add(NDEdit);
             Controls.Add(NDBack);
             Controls.Add(NDText);
             Controls.Add(NDTitle);
             Name = "NoteDetail";
-            Size = new Size(986, 700);
+            Size = new Size(1055, 747);
             Load += NoteDetail_Load;
+            ((System.ComponentModel.ISupportInitialize)NDImage).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -102,5 +114,6 @@
         private Label NDText;
         private Label NDBack;
         private Label NDEdit;
+        private PictureBox NDImage;
     }
 }
