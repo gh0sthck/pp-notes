@@ -58,6 +58,7 @@ namespace pp_notes
         {
             NoteEdit nd = new NoteEdit();
             nd.note = note;
+            nd.loggedUser = loggedUser;
             nd.OnConfirm += editedNote =>
             {
                 ShowNoteScreen(editedNote, loggedUser);
@@ -65,6 +66,10 @@ namespace pp_notes
             nd.OnCreateBack += () =>
             {
                 ShowMainScreen(loggedUser);
+            };
+            nd.OnSave += note =>
+            {
+                ShowNoteScreen(note, loggedUser);
             };
             nd.OnBack += () =>
             {

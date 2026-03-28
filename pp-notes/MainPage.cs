@@ -13,6 +13,7 @@ namespace pp_notes
 
         public User LoggedUser;
         private List<Note> notes = new List<Note>();
+        private DatabaseController db;
 
         public event Action<Note>? OnNoteClick;
         public event Action? OnExit;
@@ -21,10 +22,8 @@ namespace pp_notes
         public MainPage()
         {
             InitializeComponent();
-            for (int i = 0; i < 20; i++)
-            {
-                notes.Add(new Note(i, $"testtitle-{i}", "so description...", LoggedUser));
-            }
+            db = new DatabaseController();
+            
         }
 
         private void InsertData(List<Note> notes)
@@ -45,6 +44,7 @@ namespace pp_notes
         private void MainPage_Load(object sender, EventArgs e)
         {
             MainUsername.Text = LoggedUser.Username;
+            notes = db.GetNotesByUserId(LoggedUser.Id);
             InsertData(notes);
         }
 

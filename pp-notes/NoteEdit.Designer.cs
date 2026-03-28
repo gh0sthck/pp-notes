@@ -92,6 +92,7 @@
             NEDelete.Size = new Size(95, 26);
             NEDelete.TabIndex = 5;
             NEDelete.Text = "Удалить";
+            NEDelete.Click += NEDelete_Click;
             // 
             // NoteEdit
             // 

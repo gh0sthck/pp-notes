@@ -29,6 +29,11 @@ namespace pp_notes
             set { this.id = value; }
         }
 
+        public User Author
+        {
+            get { return this.author; }
+        }
+
 
         public Note(int id, string title, string text, User author)
         {

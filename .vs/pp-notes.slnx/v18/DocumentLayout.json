@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\pp-notes\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|d:\\pp-notes\\pp-notes\\noteedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|solutionrelative:pp-notes\\noteedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|d:\\pp-notes\\pp-notes\\noteedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|solutionrelative:pp-notes\\noteedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -11,36 +15,16 @@
       "RelativeMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|solutionrelative:pp-notes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|d:\\pp-notes\\pp-notes\\databasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|solutionrelative:pp-notes\\databasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|D:\\pp-notes\\pp-notes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|solutionrelative:pp-notes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|D:\\pp-notes\\pp-notes\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|solutionrelative:pp-notes\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|d:\\pp-notes\\pp-notes\\notedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|solutionrelative:pp-notes\\notedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|d:\\pp-notes\\pp-notes\\noteedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|solutionrelative:pp-notes\\noteedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|d:\\pp-notes\\pp-notes\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|solutionrelative:pp-notes\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|d:\\pp-notes\\pp-notes\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|solutionrelative:pp-notes\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|d:\\pp-notes\\pp-notes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|solutionrelative:pp-notes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|d:\\pp-notes\\pp-notes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA72896D-99C9-46DE-A3F0-366F9393E6E0}|pp-notes\\pp-notes.csproj|solutionrelative:pp-notes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,46 +50,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainPage.cs",
-              "DocumentMoniker": "D:\\pp-notes\\pp-notes\\MainPage.cs",
-              "RelativeDocumentMoniker": "pp-notes\\MainPage.cs",
-              "ToolTip": "D:\\pp-notes\\pp-notes\\MainPage.cs",
-              "RelativeToolTip": "pp-notes\\MainPage.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAADwvzsAAAARAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "NoteEdit.cs [Design]",
+              "DocumentMoniker": "D:\\pp-notes\\pp-notes\\NoteEdit.cs",
+              "RelativeDocumentMoniker": "pp-notes\\NoteEdit.cs",
+              "ToolTip": "D:\\pp-notes\\pp-notes\\NoteEdit.cs [Design]",
+              "RelativeToolTip": "pp-notes\\NoteEdit.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T12:12:16.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-28T13:52:48.415Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "NoteEdit.cs",
               "DocumentMoniker": "D:\\pp-notes\\pp-notes\\NoteEdit.cs",
               "RelativeDocumentMoniker": "pp-notes\\NoteEdit.cs",
               "ToolTip": "D:\\pp-notes\\pp-notes\\NoteEdit.cs",
               "RelativeToolTip": "pp-notes\\NoteEdit.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T12:11:50.959Z",
+              "WhenOpened": "2026-03-28T13:46:25.012Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "NoteDetail.cs",
-              "DocumentMoniker": "D:\\pp-notes\\pp-notes\\NoteDetail.cs",
-              "RelativeDocumentMoniker": "pp-notes\\NoteDetail.cs",
-              "ToolTip": "D:\\pp-notes\\pp-notes\\NoteDetail.cs",
-              "RelativeToolTip": "pp-notes\\NoteDetail.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAUwCEAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\pp-notes\\pp-notes\\Form1.cs",
+              "RelativeDocumentMoniker": "pp-notes\\Form1.cs",
+              "ToolTip": "D:\\pp-notes\\pp-notes\\Form1.cs",
+              "RelativeToolTip": "pp-notes\\Form1.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAIwEkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T12:06:35.514Z",
+              "WhenOpened": "2026-03-28T13:30:04.812Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "DatabaseController.cs",
+              "DocumentMoniker": "D:\\pp-notes\\pp-notes\\DatabaseController.cs",
+              "RelativeDocumentMoniker": "pp-notes\\DatabaseController.cs",
+              "ToolTip": "D:\\pp-notes\\pp-notes\\DatabaseController.cs",
+              "RelativeToolTip": "pp-notes\\DatabaseController.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAcwI4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T12:30:49.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MainPage.cs [Design]",
               "DocumentMoniker": "D:\\pp-notes\\pp-notes\\MainPage.cs",
               "RelativeDocumentMoniker": "pp-notes\\MainPage.cs",
@@ -117,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\pp-notes\\pp-notes\\Form1.cs",
               "RelativeDocumentMoniker": "pp-notes\\Form1.cs",
@@ -126,67 +122,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-28T10:46:37.081Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\pp-notes\\pp-notes\\Form1.cs",
-              "RelativeDocumentMoniker": "pp-notes\\Form1.cs",
-              "ToolTip": "D:\\pp-notes\\pp-notes\\Form1.cs",
-              "RelativeToolTip": "pp-notes\\Form1.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwEMAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T10:46:41.161Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NoteEdit.cs [Design]",
-              "DocumentMoniker": "D:\\pp-notes\\pp-notes\\NoteEdit.cs",
-              "RelativeDocumentMoniker": "pp-notes\\NoteEdit.cs",
-              "ToolTip": "D:\\pp-notes\\pp-notes\\NoteEdit.cs [Design]",
-              "RelativeToolTip": "pp-notes\\NoteEdit.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T12:02:58.109Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\pp-notes\\pp-notes\\Login.cs",
-              "RelativeDocumentMoniker": "pp-notes\\Login.cs",
-              "ToolTip": "D:\\pp-notes\\pp-notes\\Login.cs",
-              "RelativeToolTip": "pp-notes\\Login.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAkAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T10:48:29.951Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\pp-notes\\pp-notes\\Program.cs",
-              "RelativeDocumentMoniker": "pp-notes\\Program.cs",
-              "ToolTip": "D:\\pp-notes\\pp-notes\\Program.cs",
-              "RelativeToolTip": "pp-notes\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T10:08:40.716Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\pp-notes\\pp-notes\\User.cs",
-              "RelativeDocumentMoniker": "pp-notes\\User.cs",
-              "ToolTip": "D:\\pp-notes\\pp-notes\\User.cs",
-              "RelativeToolTip": "pp-notes\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T09:39:20.005Z"
             }
           ]
         }

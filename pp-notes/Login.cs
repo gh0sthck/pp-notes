@@ -4,10 +4,12 @@
     {
 
         public event Action<User>? OnAuthenticated;
+        private DatabaseController db;
 
         public Login()
         {
             InitializeComponent();
+            db = new DatabaseController();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -19,16 +21,20 @@
         {
             string login = LoginLoginBox.Text.ToString();
             string password = LoginPasswordBox.Text.ToString();
-            // get data from db; test user instead
-            User TestUser = new User("admin", "admin");
-            if (login == TestUser.Username && password == TestUser.Password)
+            
+            User? user = db.GetUserByName(login);
+            if (user != null)
             {
-                OnAuthenticated?.Invoke(TestUser);
+                if (password == user.Password)
+                {
+                    OnAuthenticated?.Invoke(user);
+                }
             }
             else
             {
                 MessageBox.Show("Неверный логин или пароль");
-            }
+            }     
+           
         }
 
         private void LoginButton_Click(object sender, EventArgs e)

@@ -12,6 +12,7 @@ namespace pp_notes
     {
         public Note? note;
         public User loggedUser;
+        private DatabaseController db;
 
         public event Action<Note>? OnConfirm;
         public event Action<Note>? OnSave;
@@ -21,6 +22,7 @@ namespace pp_notes
         public NoteEdit()
         {
             InitializeComponent();
+            db = new DatabaseController();
         }
 
         private void NoteEdit_Load(object sender, EventArgs e)
@@ -29,25 +31,44 @@ namespace pp_notes
             {
                 NETitle.Text = note.Title;
                 NEText.Text = note.Text;
-            } else
+            }
+            else
             {
                 NEDelete.Visible = false;
             }
-            
+
         }
 
         private void NEConfirm_Click(object sender, EventArgs e)
         {
             if (note != null)
             {
-                OnConfirm?.Invoke(note);
+                Note? CreatedNote = new Note(note.Id, NETitle.Text.ToString(), NEText.Text.ToString(), loggedUser);
+                CreatedNote = db.EditNote(note.Id, CreatedNote);
+                if (CreatedNote != null)
+                {
+                    OnConfirm?.Invoke(CreatedNote);
+                }
+                else
+                {
+                    MessageBox.Show("Ошибка обновления данных: возможно, вы не ввели заголовок");
+                }
+
             }
             else
             {
-                Note CreatedNote = new Note(1, NETitle.Text.ToString(), NEText.Text.ToString(), loggedUser);
-                OnSave?.Invoke(CreatedNote);
+                Note? CreatedNote = new Note(-1, NETitle.Text.ToString(), NEText.Text.ToString(), loggedUser);
+                CreatedNote = db.AddNote(CreatedNote);
+                if (CreatedNote != null)
+                {
+                    OnSave?.Invoke(CreatedNote);
+                }
+                else
+                {
+                    MessageBox.Show("Ошибка добавления данных: возможно, вы не ввели заголовок");
+                }
             }
-            
+
         }
 
         private void NEBack_Click(object sender, EventArgs e)
@@ -55,11 +76,26 @@ namespace pp_notes
             if (note != null)
             {
                 OnBack?.Invoke();
-            } else
+            }
+            else
             {
                 OnCreateBack?.Invoke();
             }
-            
+
+        }
+
+        private void NEDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult choice = MessageBox.Show($"Вы точно хотите удалить заметку {note.Title}?", "Подтвердите удаление", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (choice == DialogResult.Yes)
+            {
+                if (db.DeleteNote(note.Id))
+                {
+                    OnCreateBack?.Invoke();
+                    MessageBox.Show("Заметка удалена");
+                }
+            }
         }
     }
 }
