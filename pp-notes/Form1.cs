@@ -20,7 +20,26 @@ namespace pp_notes
 
         private void ShowMainScreen(User loggedUser)
         {
-            MessageBox.Show("authed");
+            MainPage mp = new MainPage();
+            mp.LoggedUser = loggedUser;
+
+            mp.OnNoteClick += note =>
+            {
+                ShowNoteScreen(note, loggedUser);
+            };
+
+            ShowScreen(mp);
+        }
+
+        private void ShowNoteScreen(Note note, User loggedUser)
+        {
+            NoteDetail np = new NoteDetail();
+            np.note = note;
+            np.OnBack += () =>
+            {
+                ShowMainScreen(loggedUser);
+            };
+            ShowScreen(np);
         }
 
         private void ShowLoginScreen()

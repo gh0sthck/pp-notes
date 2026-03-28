@@ -8,5 +8,14 @@
     <Compile Update="Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="MainPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="NoteCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="NoteDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

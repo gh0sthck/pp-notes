@@ -46,7 +46,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(4, 3, 4, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(450, 661);
+            panel1.Size = new Size(450, 700);
             panel1.TabIndex = 0;
             // 
             // label1
@@ -86,6 +86,7 @@
             LoginPasswordBox.Location = new Point(119, 313);
             LoginPasswordBox.Margin = new Padding(4, 3, 4, 3);
             LoginPasswordBox.Name = "LoginPasswordBox";
+            LoginPasswordBox.PlaceholderText = "Пароль";
             LoginPasswordBox.Size = new Size(226, 24);
             LoginPasswordBox.TabIndex = 1;
             LoginPasswordBox.UseSystemPasswordChar = true;
@@ -99,6 +100,7 @@
             LoginLoginBox.Location = new Point(119, 258);
             LoginLoginBox.Margin = new Padding(4, 3, 4, 3);
             LoginLoginBox.Name = "LoginLoginBox";
+            LoginLoginBox.PlaceholderText = "Логин";
             LoginLoginBox.Size = new Size(226, 24);
             LoginLoginBox.TabIndex = 0;
             // 
@@ -110,7 +112,7 @@
             Controls.Add(panel1);
             Margin = new Padding(4, 3, 4, 3);
             Name = "Login";
-            Size = new Size(998, 667);
+            Size = new Size(986, 700);
             Load += Login_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
